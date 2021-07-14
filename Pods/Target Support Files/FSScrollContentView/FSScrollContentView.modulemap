@@ -1,0 +1,6 @@
+framework module FSScrollContentView {
+  umbrella header "FSScrollContentView-umbrella.h"
+
+  export *
+  module * { export * }
+}
