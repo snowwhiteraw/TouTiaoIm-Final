@@ -11,4 +11,5 @@
 > 终端执行：
 > 
 > rm -rf Pods/ Podfile.lock
+> 
 > pod install
