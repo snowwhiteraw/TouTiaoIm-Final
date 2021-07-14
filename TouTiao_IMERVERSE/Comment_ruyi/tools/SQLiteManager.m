@@ -61,7 +61,8 @@ static sqlite3 * dbPoint = Nil;
     
     char *error;
     int commentid = 0;
-    NSString *sql = [NSString stringWithFormat:@"select max(commentID) from comment where articleID = %d;",articleID];
+
+    NSString *sql = [NSString stringWithFormat:@"select max(commentID) from comment;"];
     sqlite3_stmt *statment = nil;
     int res = sqlite3_prepare_v2(dbPoint,[sql UTF8String], -1, &statment, NULL);
     if (res == SQLITE_OK) {
@@ -70,6 +71,7 @@ static sqlite3 * dbPoint = Nil;
         }
     }
     commentid++;
+    NSLog(@"当前评论id：%d",commentid);
     NSString *sql1 = [NSString stringWithFormat:@"insert into comment values(%d,%d,'%@','%@','%@','%@',%@);",articleID,commentid,model.name,model.touXiang,model.comment,model.time,model.dz_count];
     if (sqlite3_exec(dbPoint, [sql1 UTF8String], NULL, NULL, &error) == SQLITE_OK) {
         NSLog(@"已插入数据到数据库");
@@ -78,7 +80,19 @@ static sqlite3 * dbPoint = Nil;
     }
 }
 
-
++ (int)commentCountWithpath:(NSString *)path andArticleID:(int)id1{
+    SQLiteManager *m = [[SQLiteManager alloc]init];
+    [m openDBWithPath:path];
+    NSString *sql = [NSString stringWithFormat:@"select count(*) from comment where articleID = %d;",id1+2];
+    sqlite3_stmt *stmt = nil;
+    sqlite3_prepare(dbPoint, [sql UTF8String], -1, &stmt, NULL);
+    int res = 404;
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        res = sqlite3_column_int(stmt, 0);
+        }
+    
+    return res;
+}
 
 
 

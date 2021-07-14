@@ -35,9 +35,10 @@
 		3D91C660269EA8A000B72FA4 /* TVUMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C647269EA8A000B72FA4 /* TVUMJRefreshHeader.m */; };
 		3D91C661269EA8A000B72FA4 /* TVUMJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C648269EA8A000B72FA4 /* TVUMJRefreshComponent.m */; };
 		3D91C662269EA8A000B72FA4 /* TVUMJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C64E269EA8A000B72FA4 /* TVUMJRefreshBackFooter.m */; };
-		3D91C68F269EBF6E00B72FA4 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C68D269EBF6D00B72FA4 /* SQLiteManager.m */; };
-		3D91C694269EBFA700B72FA4 /* Comment_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C692269EBFA700B72FA4 /* Comment_ViewController.m */; };
-		3D91C699269EBFD600B72FA4 /* Comment_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C697269EBFD600B72FA4 /* Comment_TableViewCell.m */; };
+		3D91C6CE269EEE4900B72FA4 /* Comment_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C6C5269EEE4900B72FA4 /* Comment_ViewController.m */; };
+		3D91C6CF269EEE4900B72FA4 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C6C8269EEE4900B72FA4 /* SQLiteManager.m */; };
+		3D91C6D0269EEE4900B72FA4 /* Comment_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C6CA269EEE4900B72FA4 /* Comment_TableViewCell.m */; };
+		3D91C6D1269EEE4900B72FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D91C6CB269EEE4900B72FA4 /* Main.storyboard */; };
 		8698C9FD67EB416EBDA66AF8 /* Pods_TouTiao_IMERVERSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D60A3204A1E90E91BD8EDF /* Pods_TouTiao_IMERVERSE.framework */; };
 		9D10F3392686C89D006B0FE7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D10F3382686C89D006B0FE7 /* RegisterViewController.m */; };
 		9D10F33C2686C8D0006B0FE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D10F33B2686C8D0006B0FE7 /* LoginViewController.m */; };
@@ -157,12 +158,13 @@
 		3D91C64C269EA8A000B72FA4 /* TVUMJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVUMJRefreshFooter.h; sourceTree = "<group>"; };
 		3D91C64D269EA8A000B72FA4 /* TVUMJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVUMJRefreshComponent.h; sourceTree = "<group>"; };
 		3D91C64E269EA8A000B72FA4 /* TVUMJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVUMJRefreshBackFooter.m; sourceTree = "<group>"; };
-		3D91C68D269EBF6D00B72FA4 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLiteManager.m; path = "../../../../../Desktop/toutiao_Comment 2/toutiao_Comment/tools/SQLiteManager.m"; sourceTree = "<group>"; };
-		3D91C68E269EBF6E00B72FA4 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLiteManager.h; path = "../../../../../Desktop/toutiao_Comment 2/toutiao_Comment/tools/SQLiteManager.h"; sourceTree = "<group>"; };
-		3D91C692269EBFA700B72FA4 /* Comment_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment_ViewController.m; path = "../../../../../Desktop/toutiao_Comment 2/toutiao_Comment/Controllers/Comment_ViewController.m"; sourceTree = "<group>"; };
-		3D91C693269EBFA700B72FA4 /* Comment_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment_ViewController.h; path = "../../../../../Desktop/toutiao_Comment 2/toutiao_Comment/Controllers/Comment_ViewController.h"; sourceTree = "<group>"; };
-		3D91C697269EBFD600B72FA4 /* Comment_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment_TableViewCell.m; path = "../../../../../Desktop/toutiao_Comment 2/toutiao_Comment/Views/Comment_TableViewCell.m"; sourceTree = "<group>"; };
-		3D91C698269EBFD600B72FA4 /* Comment_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment_TableViewCell.h; path = "../../../../../Desktop/toutiao_Comment 2/toutiao_Comment/Views/Comment_TableViewCell.h"; sourceTree = "<group>"; };
+		3D91C6C4269EEE4800B72FA4 /* Comment_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment_ViewController.h; sourceTree = "<group>"; };
+		3D91C6C5269EEE4900B72FA4 /* Comment_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment_ViewController.m; sourceTree = "<group>"; };
+		3D91C6C7269EEE4900B72FA4 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		3D91C6C8269EEE4900B72FA4 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
+		3D91C6CA269EEE4900B72FA4 /* Comment_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment_TableViewCell.m; sourceTree = "<group>"; };
+		3D91C6CC269EEE4900B72FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D91C6CD269EEE4900B72FA4 /* Comment_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment_TableViewCell.h; sourceTree = "<group>"; };
 		93D60A3204A1E90E91BD8EDF /* Pods_TouTiao_IMERVERSE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouTiao_IMERVERSE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D10F3372686C89D006B0FE7 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		9D10F3382686C89D006B0FE7 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -390,6 +392,34 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		3D91C6C3269EEE4800B72FA4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D91C6C4269EEE4800B72FA4 /* Comment_ViewController.h */,
+				3D91C6C5269EEE4900B72FA4 /* Comment_ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D91C6C6269EEE4900B72FA4 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				3D91C6C7269EEE4900B72FA4 /* SQLiteManager.h */,
+				3D91C6C8269EEE4900B72FA4 /* SQLiteManager.m */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		3D91C6C9269EEE4900B72FA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D91C6CA269EEE4900B72FA4 /* Comment_TableViewCell.m */,
+				3D91C6CB269EEE4900B72FA4 /* Main.storyboard */,
+				3D91C6CD269EEE4900B72FA4 /* Comment_TableViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		812480D080D10543709E446A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,23 +570,14 @@
 		9D59523E2694614800C01759 /* Comment_ruyi */ = {
 			isa = PBXGroup;
 			children = (
+				3D91C6C3269EEE4800B72FA4 /* Controllers */,
+				3D91C6C6269EEE4900B72FA4 /* tools */,
+				3D91C6C9269EEE4900B72FA4 /* Views */,
 				9D59526F269462F900C01759 /* Menu */,
-				9D595268269462D600C01759 /* Views */,
-				9D595264269462C400C01759 /* tools */,
 				9D59524B269462AF00C01759 /* SupportingFiles */,
 				9D5952472694627000C01759 /* Models */,
-				9D5952402694622000C01759 /* Controllers */,
 			);
 			path = Comment_ruyi;
-			sourceTree = "<group>";
-		};
-		9D5952402694622000C01759 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				3D91C693269EBFA700B72FA4 /* Comment_ViewController.h */,
-				3D91C692269EBFA700B72FA4 /* Comment_ViewController.m */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		9D5952472694627000C01759 /* Models */ = {
@@ -585,24 +606,6 @@
 				9D595257269462AF00C01759 /* tou3.jpeg */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		9D595264269462C400C01759 /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				3D91C68E269EBF6E00B72FA4 /* SQLiteManager.h */,
-				3D91C68D269EBF6D00B72FA4 /* SQLiteManager.m */,
-			);
-			path = tools;
-			sourceTree = "<group>";
-		};
-		9D595268269462D600C01759 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3D91C698269EBFD600B72FA4 /* Comment_TableViewCell.h */,
-				3D91C697269EBFD600B72FA4 /* Comment_TableViewCell.m */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		9D59526F269462F900C01759 /* Menu */ = {
@@ -753,6 +756,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D595263269462AF00C01759 /* tou3.jpeg in Resources */,
+				3D91C6D1269EEE4900B72FA4 /* Main.storyboard in Resources */,
 				9D595259269462AF00C01759 /* tou1.jpeg in Resources */,
 				9D3E38CA26808B0A001BEE67 /* Menu.storyboard in Resources */,
 				9DC677F1269E8D07003D1F8E /* emoji_sort.plist in Resources */,
@@ -835,7 +839,7 @@
 				9D5952722694631800C01759 /* KxMenu.m in Sources */,
 				9D3E38C2267F9DB2001BEE67 /* CollectionViewController.m in Sources */,
 				9D595101268CAD1300C01759 /* MasonryDemoViewController.m in Sources */,
-				3D91C699269EBFD600B72FA4 /* Comment_TableViewCell.m in Sources */,
+				3D91C6D0269EEE4900B72FA4 /* Comment_TableViewCell.m in Sources */,
 				9DC677E8269E8D07003D1F8E /* LBXPermissions.swift in Sources */,
 				9D3E38EC2681D7E8001BEE67 /* SlideMenuView.m in Sources */,
 				9DA20F55269D71B400EB3713 /* IFMShareItemCell.m in Sources */,
@@ -857,7 +861,6 @@
 				9DC677F4269E8D07003D1F8E /* EmojiView.swift in Sources */,
 				9DC677E5269E8D07003D1F8E /* ScanResultController.swift in Sources */,
 				3D91C654269EA8A000B72FA4 /* TVUMJRefreshBackStateFooter.m in Sources */,
-				3D91C694269EBFA700B72FA4 /* Comment_ViewController.m in Sources */,
 				9D595082268B1D4000C01759 /* my.swift in Sources */,
 				9DC677E7269E8D07003D1F8E /* LBXScanViewStyle.swift in Sources */,
 				3D91C65C269EA8A000B72FA4 /* TVUMJRefreshStateHeader.m in Sources */,
@@ -870,8 +873,10 @@
 				3D91C660269EA8A000B72FA4 /* TVUMJRefreshHeader.m in Sources */,
 				9D3E3846267A23CB001BEE67 /* AppDelegate.m in Sources */,
 				3D91C655269EA8A000B72FA4 /* TVUMJRefreshBackNormalFooter.m in Sources */,
+				3D91C6CF269EEE4900B72FA4 /* SQLiteManager.m in Sources */,
 				3D91C656269EA8A000B72FA4 /* TVUMJRefreshBackGifFooter.m in Sources */,
 				9DC677EE269E8D07003D1F8E /* EmojiPrase.swift in Sources */,
+				3D91C6CE269EEE4900B72FA4 /* Comment_ViewController.m in Sources */,
 				9D3E3863267AFE1E001BEE67 /* MessageContentModel.m in Sources */,
 				9D10F33C2686C8D0006B0FE7 /* LoginViewController.m in Sources */,
 				9D3E3857267A23CE001BEE67 /* main.m in Sources */,
@@ -899,13 +904,20 @@
 				3D91C61C269EA88700B72FA4 /* PageManager.swift in Sources */,
 				9D3E3849267A23CB001BEE67 /* SceneDelegate.m in Sources */,
 				9DC677EC269E8D07003D1F8E /* Database.swift in Sources */,
-				3D91C68F269EBF6E00B72FA4 /* SQLiteManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3D91C6CB269EEE4900B72FA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D91C6CC269EEE4900B72FA4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		9D3E3852267A23CE001BEE67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

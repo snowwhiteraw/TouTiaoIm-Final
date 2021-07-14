@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 //提供一个类函数：调用此函数，传入当前的viewcontroller，实现评论页面的pensent
-+ (void)pop :(UIViewController *)vc andid:(int)articleid andmodel:(CommentModel *)user;
++ (instancetype)pop :(UIViewController *)vc andid:(int)articleid andmodel:(CommentModel *)user andSQLitePath:(NSString *)path;
     
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

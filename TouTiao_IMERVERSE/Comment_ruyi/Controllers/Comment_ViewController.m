@@ -10,6 +10,7 @@
 #import "Comment_TableViewCell.h"
 #import "CommentModel.h"
 #import "SQLiteManager.h"
+#import <AFNetworking.h>
 
 @interface Comment_ViewController ()<UITextViewDelegate>
 
@@ -30,6 +31,8 @@
 
 @end
 @implementation Comment_ViewController
+
+
 
 #pragma mark 这里通过通知实现了cell中菜单按钮的功能，获得某cell的用户名或评论
 - (void)shard:(NSNotification *)noti{//分享按钮的通知响应
@@ -53,7 +56,7 @@
 - (NSArray *)commentArray{
     self.manager = [[SQLiteManager alloc]init];
     if(!_commentArray){
-    [self.manager openDBWithPath:@"/Users/a123/toutiaoComment.db"];
+    [self.manager openDBWithPath:self.path];
     _commentArray = [self.manager select:self.articleid];
     }
     return _commentArray;
@@ -153,8 +156,16 @@
     [self.tableview registerClass:[Comment_TableViewCell class] forCellReuseIdentifier:@"123"];
     [self.view addSubview:self.tableview];
     
+    //增加单击关闭键盘的手势
+    UITapGestureRecognizer *singletTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(single:)];
+    [self.tableview addGestureRecognizer:singletTap];
     
 
+}
+//关闭键盘
+- (void)single :(UITapGestureRecognizer *)gesture{
+    [self.replyTextView resignFirstResponder];
+    NSLog(@"已收起键盘");
 }
 
 
@@ -171,45 +182,70 @@
     }
 #pragma mark 这里给cell页面传了本vc的底部输入框textview的地址与用户名，慎用
     [cell sentMSG:self.replyTextView andName:model.name];
-#pragma mark    通过模型赋值到cell的控件里
+    //通过模型赋值到cell的控件里
     cell.touXiang.image = [UIImage imageNamed:model.touXiang];
     cell.name.text = model.name;
     cell.comment.text = model.comment;
     cell.time.text = model.time;
     cell.dz_count.text = model.dz_count;
-
-//    cell.name.text = @"啊啊啊啊";
-//    cell.touXiang.image = [UIImage imageNamed:@"tou1.jpeg"];
-//    cell.comment.text = @"dsfaioohoiudsafhgoivhasdripgfhap9srdjfgpg9pasj    法法师打发顺丰";
-//    cell.dz_count.text = @"9";
-//    cell.time.text = @"2021";
     self.hight = [self computeHightWithString:cell.comment.text];
     return cell;
 }
 //tableview行数
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.commentArray.count;
-//    return 10;
 }
 //tableview行高
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return self.hight;
-//    return 100;
 }
 
 #pragma mark 页面的api
 //弹出评论页的类方法实现
-+ (void)pop :(UIViewController *)vc andid:(int)articleid andmodel:(CommentModel *)user{
-    Comment_ViewController *pl1 = [[Comment_ViewController alloc]init];
-    pl1.articleid = articleid;
-    pl1.user = user;
-    [vc presentViewController:pl1 animated:YES completion:nil];
++ (instancetype)pop :(UIViewController *)vc andid:(int)articleid andmodel:(CommentModel *)user andSQLitePath:(NSString *)path{
     
+    Comment_ViewController *pl1 = [[Comment_ViewController alloc]init];
+//    pl1.articleid = 4;
+    
+    //联网查找id
+    NSString *s = [NSString stringWithFormat:@"%d",articleid];
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:s forKey:@"article"];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    [manager GET:@"https://qcth23.fn.thelarkcloud.com/comment" parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"联网成功\n%@",responseObject);
+//        int plid = [[responseObject valueForKey:@"id"]intValue]+2;
+//        NSLog(@"返回id：%d",plid);
+//
+//        pl1.articleid = plid;
+//
+//        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//            NSLog(@"请求失败：%@",error);
+//        }];
+    
+    [manager GET:@"https://qcth23.fn.thelarkcloud.com/comment" parameters:dic headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSLog(@"联网成功\n%@",responseObject);
+            int plid = [[responseObject valueForKey:@"id"]intValue]+2;
+            NSLog(@"返回id：%d",plid);
+            
+            pl1.articleid = plid;
+        pl1.user = user;
+        pl1.path = path;
+        [vc presentViewController:pl1 animated:YES completion:nil];
+            
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                NSLog(@"请求失败：%@",error);
+            }];
+    
+
+    return pl1;
 }
 
 #pragma mark 其他相关方法的实现
 //顶部的点击关闭评论页面方法
 - (void)back{
+    self.tableview = nil;
+    [self.view removeFromSuperview];
+    self.view = nil;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -260,7 +296,7 @@
     UIAlertController *alerk = [UIAlertController alertControllerWithTitle:@"" message:@"发布成功" preferredStyle:UIAlertControllerStyleAlert];
     [alerk addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         //这里重新加载了一遍数据库的数据到commentarray
-        [self.manager openDBWithPath:@"/Users/a123/toutiaoComment.db"];
+        [self.manager openDBWithPath:self.path];
         self->_commentArray = [self.manager select:self.articleid];
         //
         [self.tableview reloadData];
@@ -276,9 +312,25 @@
         self.replyBotton.titleLabel.textColor = [UIColor grayColor];
         [self.replyBotton setEnabled:NO];
         
+        
+        
     }else{
         self.replyBotton.titleLabel.textColor = [UIColor blueColor];
         [self.replyBotton setEnabled:YES];
+        
+        if([self computeHightWithString:textView.text]>=73+30){
+            
+            if ([self computeHightWithString:textView.text]<=180) {
+                [textView.superview mas_updateConstraints:^(MASConstraintMaker *make) {
+                            make.height.mas_equalTo([self computeHightWithString:textView.text]-55);
+                }];
+            }
+        
+        }else{
+            [textView.superview mas_updateConstraints:^(MASConstraintMaker *make) {
+                        make.height.mas_equalTo(60);
+            }];
+        }
         
     }
 }

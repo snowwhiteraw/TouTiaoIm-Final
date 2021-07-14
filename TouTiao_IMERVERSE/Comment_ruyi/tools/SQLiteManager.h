@@ -19,6 +19,8 @@
 - (NSMutableArray *) select:(int) articleID;
 - (void) insert :(CommentModel *)model :(int) articleID;
 //- (void) update :(CommentModel *)model;
+
++ (int)commentCountWithpath:(NSString *)path andArticleID:(int)id1;
 @end
 
 #endif /* SQLiteManager_h */

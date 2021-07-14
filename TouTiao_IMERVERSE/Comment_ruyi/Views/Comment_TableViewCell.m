@@ -63,7 +63,9 @@
     [self.contentView addSubview:self.dianzan];
     //回复按钮
     self.reply = [[UIButton alloc]init];
-    [self.reply setTitle:@"回复" forState:UIControlStateNormal];
+    
+    [self.reply setImage:[UIImage systemImageNamed:@"message"] forState:UIControlStateNormal];
+    self.reply.tintColor = [UIColor systemGray2Color];
     self.reply.titleLabel.font = [UIFont systemFontOfSize:14];
     [self.reply.titleLabel setTextAlignment:NSTextAlignmentRight];
     [self.reply setTitleColor:[UIColor systemBlueColor] forState:UIControlStateNormal];
@@ -125,7 +127,7 @@
     [self.reply mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(self.dz_count.mas_left);
             make.bottom.equalTo(self.contentView.mas_bottom);
-            make.size.mas_equalTo(CGSizeMake(50, 20));
+            make.size.mas_equalTo(CGSizeMake(30, 20));
     }];
     //评论详情
     [self.comment mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -138,7 +140,7 @@
 
 //cell中回复按钮的事件响应
 - (void) replyaction:(UIButton *)bt{
-    self.textview.text = [NSString stringWithFormat:@"回复 %@ ：\n",self.pername];
+    self.textview.text = [NSString stringWithFormat:@"回复@%@ ：\n",self.pername];
     [self.textview becomeFirstResponder];
     
 }
@@ -149,13 +151,13 @@
     if(!self.clicking){
         
         self.dianzan.tintColor = [UIColor systemBlueColor];
-        NSInteger tem = [self.dz_count.text intValue];
+        int tem = [self.dz_count.text intValue];
         tem++;
         self.dz_count.text = [NSString stringWithFormat:@"%d",tem];
     }else{
         
         self.dianzan.tintColor = [UIColor lightGrayColor];
-        NSInteger tem = [self.dz_count.text intValue];
+        int tem = [self.dz_count.text intValue];
         tem--;
         self.dz_count.text = [NSString stringWithFormat:@"%d",tem];
     }
