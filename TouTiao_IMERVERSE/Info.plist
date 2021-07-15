@@ -62,5 +62,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>拍摄照片需要获取相机权限</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>选择图片需要获取相册权限</string>
 </dict>
 </plist>
