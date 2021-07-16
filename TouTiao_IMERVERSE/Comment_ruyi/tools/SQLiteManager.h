@@ -16,11 +16,12 @@
 
 - (void) openDBWithPath :(NSString *)path;
 - (void) closeDB;
+//返回文章id对应的评论数组
 - (NSMutableArray *) select:(int) articleID;
+//插入评论到数据库
 - (void) insert :(CommentModel *)model :(int) articleID;
-//- (void) update :(CommentModel *)model;
-
-+ (int)commentCountWithpath:(NSString *)path andArticleID:(int)id1;
+//以文章id获取对应的评论数
++ (int)commentCountWithArticleID:(int)id1;
 @end
 
 #endif /* SQLiteManager_h */

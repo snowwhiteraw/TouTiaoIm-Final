@@ -155,22 +155,18 @@
 }
 
 - (void)commentButtonfunc:(id)sender {
-//    UIStoryboard *plst = [UIStoryboard storyboardWithName:@"plstb" bundle:[NSBundle mainBundle]];
-//    plViewController *plvc = [plst instantiateViewControllerWithIdentifier:@"PLST"];
-//    [self presentViewController:plvc animated:YES completion:nil];
-    
-    //上面是旧的评论页
-//    NSLog(@"文章编号=%d",self.Contentarray[self.messageNum].messageid.intValue);
-//    NSInteger  commentnum = [Comment_ViewController pop:self andid:self.Contentarray[self.messageNum].messageid.intValue andmodel:[[UserMessageModel alloc]init]];
-    
-//    CommentModel *model = [[CommentModel alloc]init];
-//    model.name = @"aaa";
-//    [Comment_ViewController pop:self andid:1 andmodel:model];
+
     //主页面跳转评论页
         CommentModel *model = [[CommentModel alloc]init];
         model.name = @"安妮日记";
         model.touXiang = @"tou7.jpeg";
-        [Comment_ViewController pop:self andid:self.Contentarray[self.messageNum].messageid.intValue andmodel:model andSQLitePath:@"/Users/seventeenk17/Documents/toutiaoComment.db"];
+    
+    if (self.messageNum >= self.Contentarray.count) {
+        return;
+    }
+
+    [Comment_ViewController pop:self andid:self.Contentarray[self.messageNum].messageid.intValue andmodel:model];
+    
     
 }
 

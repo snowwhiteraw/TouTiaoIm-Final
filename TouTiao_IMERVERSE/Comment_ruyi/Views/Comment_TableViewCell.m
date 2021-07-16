@@ -16,7 +16,6 @@
 - (void)sentMSG:(UITextView *)tv andName:(NSString *)name{
     self.textview = tv;
     self.pername = name;
-    
 }
 
 - (void)awakeFromNib {
@@ -26,15 +25,16 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
     // Configure the view for the selected state
-
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    
     self = [super initWithStyle:(UITableViewCellStyle)style reuseIdentifier:reuseIdentifier];
     //头像
     self.touXiang = [[UIImageView alloc]init];
+    self.touXiang.layer.masksToBounds = YES;
+    self.touXiang.layer.cornerRadius = 17.5;
     [self.contentView addSubview:self.touXiang];
     //评论详情
     self.comment = [[UITextView alloc]init];

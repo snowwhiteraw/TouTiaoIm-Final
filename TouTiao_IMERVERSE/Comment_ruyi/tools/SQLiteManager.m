@@ -13,11 +13,13 @@ static sqlite3 * dbPoint = Nil;
 @implementation SQLiteManager
 
 - (void) openDBWithPath :(NSString *)path{
+    if(self.openning == NO){
     if(sqlite3_open([path UTF8String], &dbPoint) == SQLITE_OK){
         self.openning = YES;
         NSLog(@"成功打开数据库");
     }else{
         NSLog(@"打开数据库失败啦啦啦啦啦");
+    }
     }
 }
     
@@ -29,13 +31,13 @@ static sqlite3 * dbPoint = Nil;
     
 - (NSMutableArray *) select:(int) articleID{
     
-    NSMutableArray *arr = [[NSMutableArray alloc]init];
+    NSMutableArray *commentArray = [[NSMutableArray alloc]init];
 
     //根据文章id查询评论数据
     NSString *sql = [NSString stringWithFormat:@"select name,touXiang,comment,time,dzCount from comment where articleID = %d order by dzCount desc;",articleID];
     sqlite3_stmt *statment = nil;
-    int res = sqlite3_prepare_v2(dbPoint,[sql UTF8String], -1, &statment, NULL);
-    if (res == SQLITE_OK) {
+    int result = sqlite3_prepare_v2(dbPoint,[sql UTF8String], -1, &statment, NULL);
+    if (result == SQLITE_OK) {
     while (sqlite3_step(statment) == SQLITE_ROW) {
         CommentModel *model = [[CommentModel alloc]init];
         model.name = [[NSString alloc]initWithCString:(char *)sqlite3_column_text(statment, 0) encoding:NSUTF8StringEncoding];
@@ -44,15 +46,15 @@ static sqlite3 * dbPoint = Nil;
         model.time = [[NSString alloc]initWithCString:(char *)sqlite3_column_text(statment, 3) encoding:NSUTF8StringEncoding];
         model.dz_count = [[NSString alloc]initWithCString:(char *)sqlite3_column_text(statment, 4) encoding:NSUTF8StringEncoding];
         
-        [arr addObject:model];
+        [commentArray addObject:model];
         }
     }
-    if (arr) {
+    if (commentArray) {
         NSLog(@"数据库查询成功");
     }else{
         NSLog(@"数据库查询失败");
     }
-    return arr;
+    return commentArray;
     
     
 }
@@ -73,16 +75,18 @@ static sqlite3 * dbPoint = Nil;
     commentid++;
     NSLog(@"当前评论id：%d",commentid);
     NSString *sql1 = [NSString stringWithFormat:@"insert into comment values(%d,%d,'%@','%@','%@','%@',%@);",articleID,commentid,model.name,model.touXiang,model.comment,model.time,model.dz_count];
+    NSLog(@"%@",sql1);
     if (sqlite3_exec(dbPoint, [sql1 UTF8String], NULL, NULL, &error) == SQLITE_OK) {
-        NSLog(@"已插入数据到数据库");
+        NSLog(@"已插入数据到id%d的数据库",articleID);
     }else{
         NSLog(@"插入数据失败：%s",error);
     }
 }
 
-+ (int)commentCountWithpath:(NSString *)path andArticleID:(int)id1{
-    SQLiteManager *m = [[SQLiteManager alloc]init];
-    [m openDBWithPath:path];
++ (int)commentCountWithArticleID:(int)id1{
+    SQLiteManager *sqlManager = [[SQLiteManager alloc]init];
+    NSString *dbPath = [NSString stringWithFormat:@"%@",[[NSBundle mainBundle]pathForResource:@"toutiaoComment" ofType:@"db"]];
+    [sqlManager openDBWithPath:dbPath];
     NSString *sql = [NSString stringWithFormat:@"select count(*) from comment where articleID = %d;",id1+2];
     sqlite3_stmt *stmt = nil;
     sqlite3_prepare(dbPoint, [sql UTF8String], -1, &stmt, NULL);
