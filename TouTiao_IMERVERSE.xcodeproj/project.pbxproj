@@ -35,10 +35,24 @@
 		3D91C660269EA8A000B72FA4 /* TVUMJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C647269EA8A000B72FA4 /* TVUMJRefreshHeader.m */; };
 		3D91C661269EA8A000B72FA4 /* TVUMJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C648269EA8A000B72FA4 /* TVUMJRefreshComponent.m */; };
 		3D91C662269EA8A000B72FA4 /* TVUMJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C64E269EA8A000B72FA4 /* TVUMJRefreshBackFooter.m */; };
-		3D91C6CE269EEE4900B72FA4 /* Comment_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C6C5269EEE4900B72FA4 /* Comment_ViewController.m */; };
-		3D91C6CF269EEE4900B72FA4 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C6C8269EEE4900B72FA4 /* SQLiteManager.m */; };
-		3D91C6D0269EEE4900B72FA4 /* Comment_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D91C6CA269EEE4900B72FA4 /* Comment_TableViewCell.m */; };
-		3D91C6D1269EEE4900B72FA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D91C6CB269EEE4900B72FA4 /* Main.storyboard */; };
+		84C5F12826A1595C00F5826D /* Comment_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F12726A1595C00F5826D /* Comment_ViewController.m */; };
+		84C5F13226A15AB800F5826D /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F13026A15AB800F5826D /* CommentModel.m */; };
+		84C5F14126A15ADA00F5826D /* tou5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13326A15AD900F5826D /* tou5.jpeg */; };
+		84C5F14226A15ADA00F5826D /* tou1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13426A15AD900F5826D /* tou1.jpeg */; };
+		84C5F14326A15ADA00F5826D /* tou6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13526A15AD900F5826D /* tou6.jpeg */; };
+		84C5F14426A15ADA00F5826D /* tou.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13626A15AD900F5826D /* tou.png */; };
+		84C5F14526A15ADA00F5826D /* tou3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13726A15AD900F5826D /* tou3.jpeg */; };
+		84C5F14626A15ADA00F5826D /* tou4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13826A15AD900F5826D /* tou4.jpeg */; };
+		84C5F14726A15ADA00F5826D /* tou10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13926A15AD900F5826D /* tou10.jpeg */; };
+		84C5F14826A15ADA00F5826D /* toutiaoComment.db in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13A26A15ADA00F5826D /* toutiaoComment.db */; };
+		84C5F14926A15ADA00F5826D /* biankuang.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13B26A15ADA00F5826D /* biankuang.jpeg */; };
+		84C5F14A26A15ADA00F5826D /* tou7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13C26A15ADA00F5826D /* tou7.jpeg */; };
+		84C5F14B26A15ADA00F5826D /* tou2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13D26A15ADA00F5826D /* tou2.jpeg */; };
+		84C5F14C26A15ADA00F5826D /* tou8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13E26A15ADA00F5826D /* tou8.jpeg */; };
+		84C5F14D26A15ADA00F5826D /* tou11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F13F26A15ADA00F5826D /* tou11.jpeg */; };
+		84C5F14E26A15ADA00F5826D /* tou9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 84C5F14026A15ADA00F5826D /* tou9.jpeg */; };
+		84C5F15126A15AF200F5826D /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F15026A15AF200F5826D /* SQLiteManager.m */; };
+		84C5F15426A15AFF00F5826D /* Comment_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C5F15226A15AFE00F5826D /* Comment_TableViewCell.m */; };
 		8698C9FD67EB416EBDA66AF8 /* Pods_TouTiao_IMERVERSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D60A3204A1E90E91BD8EDF /* Pods_TouTiao_IMERVERSE.framework */; };
 		9D10F3392686C89D006B0FE7 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D10F3382686C89D006B0FE7 /* RegisterViewController.m */; };
 		9D10F33C2686C8D0006B0FE7 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D10F33B2686C8D0006B0FE7 /* LoginViewController.m */; };
@@ -67,19 +81,6 @@
 		9D59510D268E167200C01759 /* TagHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D59510C268E167200C01759 /* TagHeaderView.m */; };
 		9D59512C2692EE3900C01759 /* ZanLikeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D59512B2692EE3800C01759 /* ZanLikeView.m */; };
 		9D59523F269461C300C01759 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D59523A26945FBA00C01759 /* libsqlite3.0.tbd */; };
-		9D59524A2694627100C01759 /* CommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5952492694627000C01759 /* CommentModel.m */; };
-		9D595258269462AF00C01759 /* tou10.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D59524C269462AF00C01759 /* tou10.jpeg */; };
-		9D595259269462AF00C01759 /* tou1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D59524D269462AF00C01759 /* tou1.jpeg */; };
-		9D59525A269462AF00C01759 /* tou11.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D59524E269462AF00C01759 /* tou11.jpeg */; };
-		9D59525B269462AF00C01759 /* tou6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D59524F269462AF00C01759 /* tou6.jpeg */; };
-		9D59525C269462AF00C01759 /* tou7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595250269462AF00C01759 /* tou7.jpeg */; };
-		9D59525D269462AF00C01759 /* tou4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595251269462AF00C01759 /* tou4.jpeg */; };
-		9D59525E269462AF00C01759 /* tou8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595252269462AF00C01759 /* tou8.jpeg */; };
-		9D59525F269462AF00C01759 /* tou9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595253269462AF00C01759 /* tou9.jpeg */; };
-		9D595260269462AF00C01759 /* tou5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595254269462AF00C01759 /* tou5.jpeg */; };
-		9D595261269462AF00C01759 /* tou.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D595255269462AF00C01759 /* tou.png */; };
-		9D595262269462AF00C01759 /* tou2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595256269462AF00C01759 /* tou2.jpeg */; };
-		9D595263269462AF00C01759 /* tou3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9D595257269462AF00C01759 /* tou3.jpeg */; };
 		9D5952722694631800C01759 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D5952712694631800C01759 /* KxMenu.m */; };
 		9DA20F52269D71B400EB3713 /* IFMShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA20F4B269D71B400EB3713 /* IFMShareItem.m */; };
 		9DA20F53269D71B400EB3713 /* IFMShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA20F4C269D71B400EB3713 /* IFMShareView.m */; };
@@ -158,13 +159,28 @@
 		3D91C64C269EA8A000B72FA4 /* TVUMJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVUMJRefreshFooter.h; sourceTree = "<group>"; };
 		3D91C64D269EA8A000B72FA4 /* TVUMJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TVUMJRefreshComponent.h; sourceTree = "<group>"; };
 		3D91C64E269EA8A000B72FA4 /* TVUMJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TVUMJRefreshBackFooter.m; sourceTree = "<group>"; };
-		3D91C6C4269EEE4800B72FA4 /* Comment_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment_ViewController.h; sourceTree = "<group>"; };
-		3D91C6C5269EEE4900B72FA4 /* Comment_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment_ViewController.m; sourceTree = "<group>"; };
-		3D91C6C7269EEE4900B72FA4 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
-		3D91C6C8269EEE4900B72FA4 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
-		3D91C6CA269EEE4900B72FA4 /* Comment_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment_TableViewCell.m; sourceTree = "<group>"; };
-		3D91C6CC269EEE4900B72FA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D91C6CD269EEE4900B72FA4 /* Comment_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment_TableViewCell.h; sourceTree = "<group>"; };
+		84C5F12626A1595C00F5826D /* Comment_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment_ViewController.h; sourceTree = "<group>"; };
+		84C5F12726A1595C00F5826D /* Comment_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment_ViewController.m; sourceTree = "<group>"; };
+		84C5F13026A15AB800F5826D /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentModel.m; path = TouTiao_IMERVERSE/Comment_ruyi/Models/CommentModel.m; sourceTree = SOURCE_ROOT; };
+		84C5F13126A15AB800F5826D /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentModel.h; path = TouTiao_IMERVERSE/Comment_ruyi/Models/CommentModel.h; sourceTree = SOURCE_ROOT; };
+		84C5F13326A15AD900F5826D /* tou5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou5.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou5.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13426A15AD900F5826D /* tou1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou1.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou1.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13526A15AD900F5826D /* tou6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou6.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou6.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13626A15AD900F5826D /* tou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tou.png; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou.png; sourceTree = SOURCE_ROOT; };
+		84C5F13726A15AD900F5826D /* tou3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou3.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou3.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13826A15AD900F5826D /* tou4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou4.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou4.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13926A15AD900F5826D /* tou10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou10.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou10.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13A26A15ADA00F5826D /* toutiaoComment.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = toutiaoComment.db; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/toutiaoComment.db; sourceTree = SOURCE_ROOT; };
+		84C5F13B26A15ADA00F5826D /* biankuang.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = biankuang.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/biankuang.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13C26A15ADA00F5826D /* tou7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou7.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou7.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13D26A15ADA00F5826D /* tou2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou2.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou2.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13E26A15ADA00F5826D /* tou8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou8.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou8.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F13F26A15ADA00F5826D /* tou11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou11.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou11.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F14026A15ADA00F5826D /* tou9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tou9.jpeg; path = TouTiao_IMERVERSE/Comment_ruyi/SupportingFiles/tou9.jpeg; sourceTree = SOURCE_ROOT; };
+		84C5F14F26A15AF200F5826D /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SQLiteManager.h; path = TouTiao_IMERVERSE/Comment_ruyi/tools/SQLiteManager.h; sourceTree = SOURCE_ROOT; };
+		84C5F15026A15AF200F5826D /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SQLiteManager.m; path = TouTiao_IMERVERSE/Comment_ruyi/tools/SQLiteManager.m; sourceTree = SOURCE_ROOT; };
+		84C5F15226A15AFE00F5826D /* Comment_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment_TableViewCell.m; path = TouTiao_IMERVERSE/Comment_ruyi/Views/Comment_TableViewCell.m; sourceTree = SOURCE_ROOT; };
+		84C5F15326A15AFE00F5826D /* Comment_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment_TableViewCell.h; path = TouTiao_IMERVERSE/Comment_ruyi/Views/Comment_TableViewCell.h; sourceTree = SOURCE_ROOT; };
 		93D60A3204A1E90E91BD8EDF /* Pods_TouTiao_IMERVERSE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouTiao_IMERVERSE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D10F3372686C89D006B0FE7 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		9D10F3382686C89D006B0FE7 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
@@ -215,20 +231,6 @@
 		9D59512A2692EE3600C01759 /* ZanLikeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZanLikeView.h; sourceTree = "<group>"; };
 		9D59512B2692EE3800C01759 /* ZanLikeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZanLikeView.m; sourceTree = "<group>"; };
 		9D59523A26945FBA00C01759 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		9D5952482694627000C01759 /* CommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentModel.h; sourceTree = "<group>"; };
-		9D5952492694627000C01759 /* CommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentModel.m; sourceTree = "<group>"; };
-		9D59524C269462AF00C01759 /* tou10.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou10.jpeg; sourceTree = "<group>"; };
-		9D59524D269462AF00C01759 /* tou1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou1.jpeg; sourceTree = "<group>"; };
-		9D59524E269462AF00C01759 /* tou11.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou11.jpeg; sourceTree = "<group>"; };
-		9D59524F269462AF00C01759 /* tou6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou6.jpeg; sourceTree = "<group>"; };
-		9D595250269462AF00C01759 /* tou7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou7.jpeg; sourceTree = "<group>"; };
-		9D595251269462AF00C01759 /* tou4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou4.jpeg; sourceTree = "<group>"; };
-		9D595252269462AF00C01759 /* tou8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou8.jpeg; sourceTree = "<group>"; };
-		9D595253269462AF00C01759 /* tou9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou9.jpeg; sourceTree = "<group>"; };
-		9D595254269462AF00C01759 /* tou5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou5.jpeg; sourceTree = "<group>"; };
-		9D595255269462AF00C01759 /* tou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tou.png; sourceTree = "<group>"; };
-		9D595256269462AF00C01759 /* tou2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou2.jpeg; sourceTree = "<group>"; };
-		9D595257269462AF00C01759 /* tou3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tou3.jpeg; sourceTree = "<group>"; };
 		9D5952702694631700C01759 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		9D5952712694631800C01759 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
 		9DA20F4B269D71B400EB3713 /* IFMShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFMShareItem.m; sourceTree = "<group>"; };
@@ -392,34 +394,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		3D91C6C3269EEE4800B72FA4 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				3D91C6C4269EEE4800B72FA4 /* Comment_ViewController.h */,
-				3D91C6C5269EEE4900B72FA4 /* Comment_ViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		3D91C6C6269EEE4900B72FA4 /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				3D91C6C7269EEE4900B72FA4 /* SQLiteManager.h */,
-				3D91C6C8269EEE4900B72FA4 /* SQLiteManager.m */,
-			);
-			path = tools;
-			sourceTree = "<group>";
-		};
-		3D91C6C9269EEE4900B72FA4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3D91C6CA269EEE4900B72FA4 /* Comment_TableViewCell.m */,
-				3D91C6CB269EEE4900B72FA4 /* Main.storyboard */,
-				3D91C6CD269EEE4900B72FA4 /* Comment_TableViewCell.h */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		812480D080D10543709E446A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +410,63 @@
 				FFB85D4A54C56DE2CA307B80 /* Pods-TouTiao_IMERVERSE.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		84C5F12526A1594900F5826D /* zryControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C5F12626A1595C00F5826D /* Comment_ViewController.h */,
+				84C5F12726A1595C00F5826D /* Comment_ViewController.m */,
+			);
+			path = zryControllers;
+			sourceTree = "<group>";
+		};
+		84C5F12C26A15A5600F5826D /* zryModels */ = {
+			isa = PBXGroup;
+			children = (
+				84C5F13126A15AB800F5826D /* CommentModel.h */,
+				84C5F13026A15AB800F5826D /* CommentModel.m */,
+			);
+			path = zryModels;
+			sourceTree = "<group>";
+		};
+		84C5F12D26A15A6500F5826D /* zryViews */ = {
+			isa = PBXGroup;
+			children = (
+				84C5F15326A15AFE00F5826D /* Comment_TableViewCell.h */,
+				84C5F15226A15AFE00F5826D /* Comment_TableViewCell.m */,
+			);
+			path = zryViews;
+			sourceTree = "<group>";
+		};
+		84C5F12E26A15A6F00F5826D /* zrySuporttingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				84C5F13B26A15ADA00F5826D /* biankuang.jpeg */,
+				84C5F13626A15AD900F5826D /* tou.png */,
+				84C5F13426A15AD900F5826D /* tou1.jpeg */,
+				84C5F13D26A15ADA00F5826D /* tou2.jpeg */,
+				84C5F13726A15AD900F5826D /* tou3.jpeg */,
+				84C5F13826A15AD900F5826D /* tou4.jpeg */,
+				84C5F13326A15AD900F5826D /* tou5.jpeg */,
+				84C5F13526A15AD900F5826D /* tou6.jpeg */,
+				84C5F13C26A15ADA00F5826D /* tou7.jpeg */,
+				84C5F13E26A15ADA00F5826D /* tou8.jpeg */,
+				84C5F14026A15ADA00F5826D /* tou9.jpeg */,
+				84C5F13926A15AD900F5826D /* tou10.jpeg */,
+				84C5F13F26A15ADA00F5826D /* tou11.jpeg */,
+				84C5F13A26A15ADA00F5826D /* toutiaoComment.db */,
+			);
+			path = zrySuporttingFiles;
+			sourceTree = "<group>";
+		};
+		84C5F12F26A15A9500F5826D /* zryTools */ = {
+			isa = PBXGroup;
+			children = (
+				84C5F14F26A15AF200F5826D /* SQLiteManager.h */,
+				84C5F15026A15AF200F5826D /* SQLiteManager.m */,
+			);
+			path = zryTools;
 			sourceTree = "<group>";
 		};
 		9D3E3838267A23CB001BEE67 = {
@@ -570,42 +601,14 @@
 		9D59523E2694614800C01759 /* Comment_ruyi */ = {
 			isa = PBXGroup;
 			children = (
-				3D91C6C3269EEE4800B72FA4 /* Controllers */,
-				3D91C6C6269EEE4900B72FA4 /* tools */,
-				3D91C6C9269EEE4900B72FA4 /* Views */,
+				84C5F12F26A15A9500F5826D /* zryTools */,
+				84C5F12E26A15A6F00F5826D /* zrySuporttingFiles */,
+				84C5F12D26A15A6500F5826D /* zryViews */,
+				84C5F12C26A15A5600F5826D /* zryModels */,
+				84C5F12526A1594900F5826D /* zryControllers */,
 				9D59526F269462F900C01759 /* Menu */,
-				9D59524B269462AF00C01759 /* SupportingFiles */,
-				9D5952472694627000C01759 /* Models */,
 			);
 			path = Comment_ruyi;
-			sourceTree = "<group>";
-		};
-		9D5952472694627000C01759 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9D5952482694627000C01759 /* CommentModel.h */,
-				9D5952492694627000C01759 /* CommentModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		9D59524B269462AF00C01759 /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				9D59524C269462AF00C01759 /* tou10.jpeg */,
-				9D59524D269462AF00C01759 /* tou1.jpeg */,
-				9D59524E269462AF00C01759 /* tou11.jpeg */,
-				9D59524F269462AF00C01759 /* tou6.jpeg */,
-				9D595250269462AF00C01759 /* tou7.jpeg */,
-				9D595251269462AF00C01759 /* tou4.jpeg */,
-				9D595252269462AF00C01759 /* tou8.jpeg */,
-				9D595253269462AF00C01759 /* tou9.jpeg */,
-				9D595254269462AF00C01759 /* tou5.jpeg */,
-				9D595255269462AF00C01759 /* tou.png */,
-				9D595256269462AF00C01759 /* tou2.jpeg */,
-				9D595257269462AF00C01759 /* tou3.jpeg */,
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		9D59526F269462F900C01759 /* Menu */ = {
@@ -755,31 +758,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D595263269462AF00C01759 /* tou3.jpeg in Resources */,
-				3D91C6D1269EEE4900B72FA4 /* Main.storyboard in Resources */,
-				9D595259269462AF00C01759 /* tou1.jpeg in Resources */,
+				84C5F14A26A15ADA00F5826D /* tou7.jpeg in Resources */,
 				9D3E38CA26808B0A001BEE67 /* Menu.storyboard in Resources */,
 				9DC677F1269E8D07003D1F8E /* emoji_sort.plist in Resources */,
+				84C5F14426A15ADA00F5826D /* tou.png in Resources */,
+				84C5F14526A15ADA00F5826D /* tou3.jpeg in Resources */,
+				84C5F14C26A15ADA00F5826D /* tou8.jpeg in Resources */,
 				9DC677F3269E8D07003D1F8E /* emoji_mapping.plist in Resources */,
-				9D59525C269462AF00C01759 /* tou7.jpeg in Resources */,
-				9D595262269462AF00C01759 /* tou2.jpeg in Resources */,
 				9D3E3854267A23CE001BEE67 /* LaunchScreen.storyboard in Resources */,
-				9D595258269462AF00C01759 /* tou10.jpeg in Resources */,
-				9D59525E269462AF00C01759 /* tou8.jpeg in Resources */,
+				84C5F14226A15ADA00F5826D /* tou1.jpeg in Resources */,
+				84C5F14B26A15ADA00F5826D /* tou2.jpeg in Resources */,
+				84C5F14E26A15ADA00F5826D /* tou9.jpeg in Resources */,
+				84C5F14326A15ADA00F5826D /* tou6.jpeg in Resources */,
+				84C5F14926A15ADA00F5826D /* biankuang.jpeg in Resources */,
 				9D3E38F52682E17B001BEE67 /* plstb.storyboard in Resources */,
-				9D59525A269462AF00C01759 /* tou11.jpeg in Resources */,
-				9D59525D269462AF00C01759 /* tou4.jpeg in Resources */,
+				84C5F14826A15ADA00F5826D /* toutiaoComment.db in Resources */,
 				9D3E38FE268360CA001BEE67 /* Main.storyboard in Resources */,
 				9D3E3851267A23CE001BEE67 /* Assets.xcassets in Resources */,
-				9D595261269462AF00C01759 /* tou.png in Resources */,
+				84C5F14126A15ADA00F5826D /* tou5.jpeg in Resources */,
 				3D91C651269EA8A000B72FA4 /* TVUMJRefresh.bundle in Resources */,
+				84C5F14726A15ADA00F5826D /* tou10.jpeg in Resources */,
+				84C5F14D26A15ADA00F5826D /* tou11.jpeg in Resources */,
 				9DC677F2269E8D07003D1F8E /* EmojiKeyBoard.bundle in Resources */,
-				9D595260269462AF00C01759 /* tou5.jpeg in Resources */,
 				9D3E38F42682E17B001BEE67 /* plCell.xib in Resources */,
-				9D59525F269462AF00C01759 /* tou9.jpeg in Resources */,
 				9DA20F54269D71B400EB3713 /* IFMShareImage.bundle in Resources */,
 				9DC677E0269E8D07003D1F8E /* CodeScan.bundle in Resources */,
-				9D59525B269462AF00C01759 /* tou6.jpeg in Resources */,
+				84C5F14626A15ADA00F5826D /* tou4.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,7 +843,7 @@
 				9D5952722694631800C01759 /* KxMenu.m in Sources */,
 				9D3E38C2267F9DB2001BEE67 /* CollectionViewController.m in Sources */,
 				9D595101268CAD1300C01759 /* MasonryDemoViewController.m in Sources */,
-				3D91C6D0269EEE4900B72FA4 /* Comment_TableViewCell.m in Sources */,
+				84C5F15426A15AFF00F5826D /* Comment_TableViewCell.m in Sources */,
 				9DC677E8269E8D07003D1F8E /* LBXPermissions.swift in Sources */,
 				9D3E38EC2681D7E8001BEE67 /* SlideMenuView.m in Sources */,
 				9DA20F55269D71B400EB3713 /* IFMShareItemCell.m in Sources */,
@@ -855,8 +859,8 @@
 				3D91C60F269EA87800B72FA4 /* FabuViewController.swift in Sources */,
 				3D91C61A269EA88700B72FA4 /* PageBar.swift in Sources */,
 				9D3E384C267A23CB001BEE67 /* HomeViewController.m in Sources */,
+				84C5F12826A1595C00F5826D /* Comment_ViewController.m in Sources */,
 				9DC677EA269E8D07003D1F8E /* PersonData.swift in Sources */,
-				9D59524A2694627100C01759 /* CommentModel.m in Sources */,
 				3D91C652269EA8A000B72FA4 /* NSBundle+TVUMJRefresh.m in Sources */,
 				9DC677F4269E8D07003D1F8E /* EmojiView.swift in Sources */,
 				9DC677E5269E8D07003D1F8E /* ScanResultController.swift in Sources */,
@@ -873,10 +877,10 @@
 				3D91C660269EA8A000B72FA4 /* TVUMJRefreshHeader.m in Sources */,
 				9D3E3846267A23CB001BEE67 /* AppDelegate.m in Sources */,
 				3D91C655269EA8A000B72FA4 /* TVUMJRefreshBackNormalFooter.m in Sources */,
-				3D91C6CF269EEE4900B72FA4 /* SQLiteManager.m in Sources */,
+				84C5F15126A15AF200F5826D /* SQLiteManager.m in Sources */,
 				3D91C656269EA8A000B72FA4 /* TVUMJRefreshBackGifFooter.m in Sources */,
+				84C5F13226A15AB800F5826D /* CommentModel.m in Sources */,
 				9DC677EE269E8D07003D1F8E /* EmojiPrase.swift in Sources */,
-				3D91C6CE269EEE4900B72FA4 /* Comment_ViewController.m in Sources */,
 				9D3E3863267AFE1E001BEE67 /* MessageContentModel.m in Sources */,
 				9D10F33C2686C8D0006B0FE7 /* LoginViewController.m in Sources */,
 				9D3E3857267A23CE001BEE67 /* main.m in Sources */,
@@ -910,14 +914,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D91C6CB269EEE4900B72FA4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D91C6CC269EEE4900B72FA4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9D3E3852267A23CE001BEE67 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
