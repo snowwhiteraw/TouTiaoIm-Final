@@ -3,7 +3,7 @@
 //  TouTiao_IMERVERSE
 //
 //  Created by 123 on 2021/6/16.
-//
+
 #import "CommentModel.h"
 #import "Comment_ViewController.h"
 
@@ -19,7 +19,6 @@
 #import "TVUMJRefresh.h"
 #import "LoginViewController.h"
 #import <SAMKeychain/SAMKeychain.h>
-#import "Comment_ViewController.h"
 #import "ZanLikeView.h"
 #import "IFMShareView.h"
 
@@ -160,12 +159,13 @@
         CommentModel *model = [[CommentModel alloc]init];
         model.name = @"安妮日记";
         model.touXiang = @"tou7.jpeg";
-    
+
     if (self.messageNum >= self.Contentarray.count) {
         return;
     }
 
     [Comment_ViewController pop:self andid:self.Contentarray[self.messageNum].messageid.intValue andmodel:model];
+    
     
     
 }

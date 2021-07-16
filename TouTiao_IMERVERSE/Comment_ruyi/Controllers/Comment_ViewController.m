@@ -214,15 +214,16 @@
     NSDictionary *dic = [NSDictionary dictionaryWithObject:idString forKey:@"article"];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:@"https://qcth23.fn.thelarkcloud.com/comment" parameters:dic headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                NSLog(@"联网成功");
-                int commentID = [[responseObject valueForKey:@"id"]intValue]+2;
-                NSLog(@"返回文章对应评论id：%d",commentID);
-                pl1.articleid = commentID;
-                pl1.user = user;
-                [vc presentViewController:pl1 animated:YES completion:nil];
-            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                    NSLog(@"联网成功");
+                    int commentID = [[responseObject valueForKey:@"id"]intValue]+2;
+                    NSLog(@"返回文章对应评论id：%d",commentID);
+                    pl1.articleid = commentID;
+                    pl1.user = user;
+                    [vc presentViewController:pl1 animated:YES completion:nil];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                     NSLog(@"网络请求失败：%@",error);
      }];
+        
     return pl1;
     }else{
         NSLog(@"调用评论页api失败，请检查参数");
